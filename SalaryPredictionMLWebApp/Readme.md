@@ -15,6 +15,9 @@ Developing End-to-End software developer salary prediction app with real data. M
 3. Go through the notebook and save the trained model as pickle.
 3. Run App `streamlit run app.py`
 
+### Demo
+![](record_demo.gif)
+
 ### Workdone
 - [x] Clean Data
 - [x] Model Training
