@@ -20,4 +20,4 @@ Developing End-to-End software developer salary prediction app with real data. M
 - [x] Model Training
 - [x] Hyperparameter Tuning through GridSearch
 - [x] Build Web app through Streamlit
-- [] Deploy model
+- [ ] Deploy model
