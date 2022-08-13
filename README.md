@@ -5,4 +5,4 @@ Projects related to different Machine Learning and Deep Learning application wit
 
 | Day | Project Title| Deployment | Post|
 | :---: | :---: | :---: | :---: |
-| 1 | Movie Recommender System | [x] Deployed on Heroku | LinkedIn|
+| 1 | Movie Recommender System | - [x] Deployed on Heroku | LinkedIn|
