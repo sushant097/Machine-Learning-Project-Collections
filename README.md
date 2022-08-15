@@ -10,4 +10,4 @@ Projects related to different Machine Learning and Deep Learning application wit
 
 | Day | Project Title| Deployment | Post|
 | :---: | :---: | :---: | :---: |
-| 1 | [Movie Recommender System](https://github.com/sushant097/Machine-Learning-Project-Collections/tree/master/MovieRecommenderSystem) | :white_check_mark: Deployed on Heroku | LinkedIn|
+| 1 | [Movie Recommender System](https://github.com/sushant097/Machine-Learning-Project-Collections/tree/master/MovieRecommenderSystem) | :white_check_mark: Deployed on Heroku | [LinkedIn](https://www.linkedin.com/posts/susan-gautam_comment-machinelearning-datasceince-activity-6964982955073044481-KNqB?utm_source=linkedin_share&utm_medium=member_desktop_web)|
