@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Recommender System</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+</head>
+<style>
+    .text-white{
+        color:white;
+    }
+</style>
+<body style="background-color: black">
+    <nav class="navbar" style="background-color: #00a65a">
+        <a class="navbar-brand">My Book Recommender</a>
+        <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/recommend">Recommend</a></li>
+            <li><a>Contact</a></li>
+
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-white" style="font-size: 50px">Top 50 Books</h1>
+            </div>
+            {%for i in range(book_name|length)%}
+                <div class="col-md-3" style="margin-top:30px">
+                    <div class="card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="{{image[i]}}">
+                            <p class="text-white">{{book_name[i]}}</p>
+                            <h4 class="text-white">{{author[i]}}</h4>
+                            <h4 class="text-white">Votes - {{votes[i]}}</h4>
+                            <h4 class="text-white">Rating - {{ratings[i]}}</h4>
+                        </div>
+                    </div>
+                </div>
+            {%endfor%}
+        </div>
+    </div>
+
+</body>
+</html>

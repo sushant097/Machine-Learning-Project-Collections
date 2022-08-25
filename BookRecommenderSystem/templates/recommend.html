@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Recommender System</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+</head>
+<style>
+    .text-white{
+        color:white;
+    }
+</style>
+<body style="background-color: black">
+    <nav class="navbar" style="background-color: #00a65a">
+        <a class="navbar-brand">My Book Recommender</a>
+        <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/recommend">Recommend</a></li>
+            <li><a>Contact</a></li>
+
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-white" style="font-size: 50px">Recommended Books</h1>
+                <form action="{{ url_for('recommend_books')}}">
+                    <input type="text" name="book-name" class="form-control"><br>
+                    <input type="submit" class="btn btn-lg btn-warning">
+                </form>
+            </div>
+            {%if data%}
+
+            {%for d in data%}
+                <div class="col-md-3" style="margin-top:30px">
+                    <div class="card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="{{d[2]}}"><br>
+                            <p class="text-white">{{d[0]}}</p>
+                            <h4 class="text-white">{{d[1]}}</h4>
+                            <h4 class="text-white">Votes - </h4>
+                            <h4 class="text-white">Rating - </h4>
+                        </div>
+                    </div>
+                </div>
+            {%endfor%}
+            {%endif%}
+        </div>
+    </div>
+
+</body>
+</html>
